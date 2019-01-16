@@ -2,4 +2,11 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-	return render(request, "home.html", {})
+	title = "Pagina de pruebas"
+	if request.user.is_authenticated:
+		title = "Bienvenido Usuario: %s" %(request.user)
+	context = {
+		"title": title,
+		"abc" : 123,
+	}
+	return render(request, "home.html", context)
