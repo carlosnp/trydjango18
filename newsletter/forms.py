@@ -2,6 +2,11 @@ from django import forms
 
 from .models import SingUp
 
+class ContactForm(forms.Form):
+    full_name = forms.CharField()
+    email = forms.EmailField()
+    message = forms.CharField()
+
 class SingUpForm(forms.ModelForm):
     class Meta:
         model = SingUp

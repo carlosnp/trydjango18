@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import SingUpForm
+from .forms import SingUpForm, ContactForm
 # Create your views here.
 def home(request):
 	title = "Pagina de pruebas"
@@ -31,3 +31,10 @@ def home(request):
 			"abc": 456
 		}
 	return render(request, "home.html", context)
+
+def contact(request):
+	form = ContactForm(request.POST or None)
+	context = {
+		"form": form,
+	}
+	return render(request, "forms.html", context)
