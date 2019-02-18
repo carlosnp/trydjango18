@@ -13,10 +13,6 @@ def home(request):
 		"abc" : 123,
 		"form": form
 	}
-
-	# Formulario\
-	# if request.method == "POST":
-	# 	print(request.POST)
 	
 	# Si el formulario es valido
 	if form.is_valid():
