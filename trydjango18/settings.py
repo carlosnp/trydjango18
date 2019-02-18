@@ -26,6 +26,11 @@ SECRET_KEY = '8%@&$2)n)w3)&ph*=1u!1*l8_=m_vp+#uz@z2%+gv7@55v&#&='
 DEBUG = True
 
 ALLOWED_HOSTS = []
+# EMAIL_HOST = 'hostemail@gmail.com'
+# EMAIL_HOST_USER = 'tucorreo@gmail.com'
+# EMAIL_HOST_PASSWORD = 'tupassword'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
 
 
 # Application definition
